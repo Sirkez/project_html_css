@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+}
+
+.brand{
+  padding: 16px 32px;
+  text-decoration: none;
+  color: black;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.nav-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;  
+  padding: 16px 0 16px;
+}
+
+.nav-link{
+  padding: 24px 32px 23px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.nav-link:hover{
+  color: darkgrey;
+  background-color: black;
+}
+
+.hero{
+  width: 100%;
+  height: 100vh;
+  background-color: gray;
+  background-image: url("../img/main.jpg");
+  /* Photo by <a href="https://unsplash.com/@julianhochgesang?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Julian Hochgesang</a> on <a href="https://unsplash.com/photos/jyoTLVMv9So?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+  background-size: cover;
+}
+
+.hero-text-box{
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.hero-text-box .main{
+  font-size: 50px;
+
+}
+
+.hero-text-box .sub-main{
+  font-size: 32px;
+}
+
+.hero-btn {
+  margin: 12px 6px 0px 0px;
+  padding: 8px 16px;
+  background-color: #fefefe;
+  box-shadow: none;
+  outline: none;
+  border: 2px solid #fefefe;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+.hero-btn:hover{
+  background-color: black;
+  color: white;
+}
+
+.hero-btn-outline {
+  background-color: transparent;
+  color: #fefefe;
+}
+
+.hero-btn-icon{
+  padding-right: 4px;
+}
+
+.about-us-box{
+  margin-top: 40px;
+  text-align: center;
+}
+
+.about-us-title{
+  font-size: 32px;
+  text-decoration: underline;
+}
+
+.about-us-main{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 50px 20px 50px;
+  padding: 50px;
+  background-color: rgb(240, 240, 240);
+}
+
+.about-us-top{
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.about-us-text{
+  width: 50%;
+  text-align: left;
+}
+
+.about-us-img{
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+}
+
+.about-us-bottom{
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Biker SHOP</title>
+    <link
+      rel="stylesheet"
+      href="./assets/css/style.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="brand" href="">Biker Shop</a>
+      <ul class="nav-menu">
+        <li>
+          <a
+            class="nav-link"
+            href=""
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            href="#about-us"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            href="#products"
+            >Products</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            href="#reviews"
+            >Reviews</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            href="#contact"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <div class="hero-text-box">
+        <h1 class="main">Biker shop</h1>
+        <p class="sub-main">Best for any terrain</p>
+        <button class="hero-btn">
+          <i class="fa-solid fa-phone"> </i> Contact Us
+        </button>
+        <button class="hero-btn hero-btn-outline">
+          <i class="fa-solid fa-person-biking her-btn-icon"> </i> Check the products
+        </button>
+      </div>
+    </section>
+    <section class="about-us-box" id="about-us">
+      <h2 class="about-us-title">About Us</h2>
+      <div class="about-us-main about-us-top">
+        <p class="about-us-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolorem ipsam enim sunt ratione saepe nesciunt sapiente! Nihil porro labore blanditiis officia tenetur quas incidunt sunt libero, modi dolorum unde veritatis dignissimos deleniti repudiandae maxime velit cumque doloremque vel quod, adipisci illo! Perferendis sed hic eius reiciendis esse ducimus aliquid odit exercitationem quae sint, ea numquam perspiciatis nesciunt, harum quibusdam dolorum velit nemo voluptas deserunt amet labore quisquam assumenda voluptatem neque. Voluptatem provident nisi, aspernatur accusantium quam harum quasi corporis, nulla voluptates animi nemo! Mollitia perspiciatis eos doloremque aut ut! Ipsum saepe architecto debitis incidunt velit? Reprehenderit accusantium reiciendis quibusdam quis tempore sequi eum delectus cupiditate cumque? Error quod quasi dolore at repellendus impedit earum totam ullam quisquam placeat, dignissimos, voluptates illo qui officiis dicta! Quo ad excepturi fuga? Corrupti voluptas earum doloribus dignissimos officiis facere illum maxime natus velit modi, alias, illo et nam asperiores magnam animi fugiat adipisci?</p>
+        <img class="about-us-img" src="./assets/img/about-us.jpg" alt="Two womens driving bike">
+      </div>
+      <div class="about-us-main about-us-bottom">
+        <img class="about-us-img" src="./assets/img/about-us-sec.jpg" alt="Cyclist">
+        <p class="about-us-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis exercitationem aliquid asperiores! Similique dolor hic atque dolore nemo, rerum repellendus amet dolores obcaecati harum distinctio laudantium eaque et consectetur, modi, doloribus numquam dolorem. Rerum laudantium illum voluptate aperiam provident aliquam accusantium atque autem id, dignissimos rem eligendi quo dolorem cumque. Adipisci est odit consequuntur aliquam sequi aperiam? Voluptatem nemo expedita facilis voluptatum ipsam ipsa! Tempore harum maiores nulla rem minima, at voluptate id adipisci, atque sit natus dolores amet consequatur, deleniti omnis molestias ipsam autem aperiam impedit recusandae quos labore corporis eaque. Veniam molestiae deleniti, voluptate dignissimos nulla eius hic vel nobis est facilis at in illum tempore nemo doloremque molestias similique. Sint tempore eveniet ullam dignissimos reiciendis commodi! At voluptatem earum voluptate sapiente, illo eum eos doloribus facere modi a praesentium nostrum ea impedit dolore veritatis quaerat neque? Accusamus nesciunt tempora, praesentium eveniet aperiam sit ex voluptate molestiae maiores.</p>
+      </div>
+    </section>
+    <section id="products">
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img_nature_wide.jpg" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img_snow_wide.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img_mountains_wide.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+    </section>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/05ac939875.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
