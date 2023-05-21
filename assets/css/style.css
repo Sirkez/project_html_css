@@ -2,51 +2,54 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-family: 'Montserrat', sans-serif;
-  
+  font-family: "Montserrat", sans-serif;
 }
 
-.navbar{
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: white;
+  background-color: rgb(60, 60, 60);
   z-index: 1;
 }
 
-.brand{
+.brand {
   padding: 16px 32px;
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 2em;
   font-weight: 900;
 }
 
-.nav-menu{
+.nav-menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  list-style: none;  
+  list-style: none;
   padding: 16px 0 16px;
 }
 
-.nav-link{
+.nav-link {
   padding: 24px 32px 23px;
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 1.2em;
   font-weight: 500;
   transition: 0.5s;
 }
 
-.nav-link:hover{
-  color: darkgrey;
-  background-color: black;
+.nav-link:hover {
+  color: black;
+  background-color: grey;
 }
 
-.hero{
+.hero {
   width: 100%;
   height: 100vh;
   background-color: gray;
@@ -55,22 +58,20 @@
   background-size: cover;
 }
 
-.hero-text-box{
+.hero-text-box {
   position: absolute;
   top: 40%;
   left: 10%;
   padding: 20px;
   border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0.3);
   color: white;
 }
 
-.hero-text-box .main{
+.hero-text-box .main {
   font-size: 50px;
-
 }
 
-.hero-text-box .sub-main{
+.hero-text-box .sub-main {
   font-size: 32px;
 }
 
@@ -85,7 +86,7 @@
   transition: 0.3s;
 }
 
-.hero-btn:hover{
+.hero-btn:hover {
   background-color: black;
   color: white;
 }
@@ -95,46 +96,157 @@
   color: #fefefe;
 }
 
-.hero-btn-icon{
+.hero-btn-icon {
   padding-right: 4px;
 }
 
-.about-us-box{
-  margin-top: 40px;
+.about-us-box {
   text-align: center;
 }
 
-.about-us-title{
+.about-us-title {
+  margin: 80px 0px 50px;
   font-size: 32px;
   text-decoration: underline;
+  color: black;
 }
 
-.about-us-main{
+.about-us-main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 20px 50px 20px 50px;
+  margin: 20px 10% 20px 10%;
   padding: 50px;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(220, 220, 220);
+  color: black;
 }
 
-.about-us-top{
+.about-us-top {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 }
 
-.about-us-text{
+.about-us-text {
   width: 50%;
   text-align: left;
 }
 
-.about-us-img{
+.about-us-img {
   width: 20%;
-  height: 20%;
+  min-width: 250px;
   border-radius: 50%;
 }
 
-.about-us-bottom{
+.about-us-bottom {
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
+}
+
+.products-title {
+  text-align: center;
+  margin: 80px 0px 50px;
+  font-size: 32px;
+  text-decoration: underline;
+  color: black;
+}
+
+.mySlides {
+  height: 400px;
+  text-align: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slider-img {
+  height: 80%;
+  margin-bottom: 50px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: #717171;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: gray;
+  font-size: 25px;
+  margin-top: 100px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
 }
