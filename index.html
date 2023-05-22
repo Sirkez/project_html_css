@@ -91,7 +91,7 @@
       class="about-us-box"
       id="about-us"
     >
-      <h2 class="about-us-title">About Us</h2>
+      <h2 class="section-title">About Us</h2>
       <div class="about-us-main about-us-top">
         <p class="about-us-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
@@ -102,15 +102,6 @@
           reiciendis esse ducimus aliquid odit exercitationem quae sint, ea
           numquam perspiciatis nesciunt, harum quibusdam dolorum velit nemo
           voluptas deserunt amet labore quisquam assumenda voluptatem neque.
-          Voluptatem provident nisi, aspernatur accusantium quam harum quasi
-          corporis, nulla voluptates animi nemo! Mollitia perspiciatis eos
-          doloremque aut ut! Ipsum saepe architecto debitis incidunt velit?
-          Reprehenderit accusantium reiciendis quibusdam quis tempore sequi eum
-          delectus cupiditate cumque? Error quod quasi dolore at repellendus
-          impedit earum totam ullam quisquam placeat, dignissimos, voluptates
-          illo qui officiis dicta! Quo ad excepturi fuga? Corrupti voluptas
-          earum doloribus dignissimos officiis facere illum maxime natus velit
-          modi, alias, illo et nam asperiores magnam animi fugiat adipisci?
         </p>
         <img
           class="about-us-img"
@@ -132,21 +123,11 @@
           Rerum laudantium illum voluptate aperiam provident aliquam accusantium
           atque autem id, dignissimos rem eligendi quo dolorem cumque. Adipisci
           est odit consequuntur aliquam sequi aperiam? Voluptatem nemo expedita
-          facilis voluptatum ipsam ipsa! Tempore harum maiores nulla rem minima,
-          at voluptate id adipisci, atque sit natus dolores amet consequatur,
-          deleniti omnis molestias ipsam autem aperiam impedit recusandae quos
-          labore corporis eaque. Veniam molestiae deleniti, voluptate
-          dignissimos nulla eius hic vel nobis est facilis at in illum tempore
-          nemo doloremque molestias similique. Sint tempore eveniet ullam
-          dignissimos reiciendis commodi! At voluptatem earum voluptate
-          sapiente, illo eum eos doloribus facere modi a praesentium nostrum ea
-          impedit dolore veritatis quaerat neque? Accusamus nesciunt tempora,
-          praesentium eveniet aperiam sit ex voluptate molestiae maiores.
         </p>
       </div>
     </section>
     <section id="products">
-      <h2 class="products-title">Products</h2>
+      <h2 class="section-title">Products</h2>
       <div class="slideshow-container">
         <div class="mySlides fade">
           <img
@@ -183,7 +164,7 @@
             class="slider-img"
             src="./assets/img/bike5.jpg"
           />
-          <div class="text">City Bike</div>
+          <div class="slider-text">City Bike</div>
         </div>
         <div class="mySlides fade">
           <img
@@ -206,7 +187,7 @@
       </div>
       <br />
 
-      <div style="text-align: center">
+      <div class="dot-box">
         <span
           class="dot"
           onclick="currentSlide(1)"
@@ -231,6 +212,92 @@
           class="dot"
           onclick="currentSlide(6)"
         ></span>
+      </div>
+    </section>
+    <section id="reviews">
+      <h2 class="section-title">Reviews</h2>
+      <div class="review-box">
+        <div class="img-box left">
+          <img
+            class="review-img"
+            src="./assets/img/photo1.jpg"
+            alt="Profile picture"
+          />
+        </div>
+        <div class="message-box">
+          <p class="review-name">David</p>
+          <p class="review-score">9.8/10</p>
+          <p class="review-text">The best bikes in the world!</p>
+        </div>
+      </div>
+      <div class="review-box">
+        <div class="message-box">
+          <p class="review-name">Marta</p>
+          <p class="review-score">8.9/10</p>
+          <p class="review-text">Wide range of products</p>
+        </div>
+        <div class="img-box right">
+          <img
+            class="review-img"
+            src="./assets/img/photo2.jpg"
+            alt="Profile picture"
+          />
+        </div>
+      </div>
+      <div class="review-box">
+        <div class="img-box left">
+          <img
+            class="review-img"
+            src="./assets/img/photo3.jpg"
+            alt="Profile picture"
+          />
+        </div>
+        <div class="message-box">
+          <p class="review-name">Ola</p>
+          <p class="review-score">9.2/10</p>
+          <p class="review-text">Very good quality! Fast delivery</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-box">
+        <div class="form-box">
+          <form
+            class="x"
+            action="#"
+            method="post"
+          >
+            <div class="input">
+              <input
+                class="input-row"
+                type="email"
+                name="email"
+                placeholder="Email Adress"
+                required
+              />
+              <input
+                class="input-row"
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <textarea
+              class="message-input"
+              name="message"
+              required
+            ></textarea>
+            <input class="message-btn" type="submit" value="Send message">
+          </form>
+        </div>
+        <iframe class="map-box"
+         loading="lazy"
+          allowfullscreen
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJmYnZe8ynMI4RR6b-c9YP8uU&key=AIzaSyARjzSRp6yWzSaOEHoOa59nmshk3y-R_-E"
+          ></iframe
+        >
       </div>
     </section>
     <script>
