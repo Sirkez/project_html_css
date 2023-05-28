@@ -1,0 +1,375 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  flex-wrap: wrap;
+  top: 0;
+  width: 100%;
+  background-color: rgb(60, 60, 60);
+  z-index: 1;
+}
+
+.brand {
+  padding: 16px 32px;
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 16px 0 16px;
+}
+
+.nav-link {
+  padding: 24px 32px 23px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.nav-link:hover {
+  color: black;
+  background-color: grey;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: gray;
+  background-image: url("../img/main.jpg");
+  /* Photo by <a href="https://unsplash.com/@julianhochgesang?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Julian Hochgesang</a> on <a href="https://unsplash.com/photos/jyoTLVMv9So?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+  background-size: cover;
+}
+
+.hero-text-box {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+}
+
+.hero-text-box .main {
+  font-size: 50px;
+}
+
+.hero-text-box .sub-main {
+  font-size: 32px;
+}
+
+.hero-btn {
+  margin: 12px 6px 0px 0px;
+  padding: 8px 16px;
+  background-color: #fefefe;
+  box-shadow: none;
+  outline: none;
+  border: 2px solid #fefefe;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.hero-btn-outline {
+  background-color: transparent;
+  color: #fefefe;
+}
+
+.hero-btn-icon {
+  padding-right: 4px;
+}
+
+/* About us */
+
+.about-us-box {
+  text-align: center;
+}
+
+.section-title {
+  text-align: center;
+  padding: 50px 0px 50px;
+  font-size: 32px;
+  text-decoration: underline;
+  color: black;
+}
+
+.about-us-main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 10% 20px 10%;
+  padding: 50px;
+  background-color: rgb(240, 240, 240);
+  color: black;
+}
+
+.about-us-top {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.about-us-text {
+  width: 50%;
+  text-align: left;
+}
+
+.about-us-img {
+  width: 20%;
+  min-width: 250px;
+  border-radius: 50%;
+}
+
+.about-us-bottom {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+/* Slider */
+
+.mySlides {
+  height: 400px;
+  text-align: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slider-img {
+  height: 80%;
+  margin-bottom: 50px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: #717171;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.slider-text {
+  color: gray;
+  font-size: 25px;
+  margin-top: 100px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot-box {
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+/* Reviews */
+
+.review-box {
+  display: flex;
+  margin: 10px 20% 50px;
+  align-items: center;
+}
+.img-box {
+  height: 100px;
+  min-height: 100px;
+  width: 100px;
+  min-width: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 20px 10px 20px 0px;
+}
+
+.right{
+  margin: 20px 0px 20px 10px;
+}
+
+.review-img {
+  height: 150%;
+}
+
+.message-box {
+  margin: 8px 0px;
+  background-color: rgb(221, 221, 221);
+  border: solid 2px black;
+  border-radius: 30px;
+  padding: 30px;
+  width: 100%;
+}
+
+.review-name {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.review-score {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.review-text {
+  margin-top: 12px;
+  font-size: 22px;
+}
+
+/* Contact */
+
+#contact{
+  background-color: rgb(221, 221, 221);
+}
+
+.contact-box{
+  display: flex;
+  justify-content: center;
+  margin: 0px 10% ;
+  padding-bottom: 50px;
+}
+
+.form-box{
+  width: 50%;
+}
+
+.x{
+  width: 100%;
+}
+
+.input{
+  display: flex;
+}
+
+.input-row{
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.message-input{
+  width: calc(100% - 10px);
+  resize: none;
+  margin: 5px;
+  min-width: 350px;
+  height: 335px;
+  border-radius: 10px;
+}
+
+.message-btn{
+  width: calc(100% - 10px);
+  margin:0px 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.message-btn:hover{
+  background-color: black;
+  color: white;
+}
+
+.map-box{
+  width: calc(50% - 5px);
+  min-width: 400px;
+  height: 450px;
+  border-radius: 10px;
+  border: solid 1px black;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+
+}
